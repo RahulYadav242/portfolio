@@ -4,7 +4,7 @@ import IMG from '../src/components/IMG.jpg'
 const projects = [
   {
     id: 1,
-    title: "🚐 VanGo - Full Stack Van Rental Platform (MERN Stack)",
+    title: "🚐 VanGo - Full Stack Van Rental Platform",
     description:
       "Developed a dynamic, full-stack van rental website using React.js, Node.js, Express, and MongoDB, with secure JWT-based authentication.",
     link: "https://vango-td7i.onrender.com/login"
