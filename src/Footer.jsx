@@ -13,7 +13,7 @@ const Footer= () => {
                 </div>
                         
                 <div className="mt-0 py-5 pb-20 border-t items-center justify-between sm:flex">
-                    <p className="text-gray-600">Do you have a job opportunity or idea you'd like to discuss? Feel free to reach me at ry19980810@gmail.com.</p>
+                    <p className="text-gray-600">Do you have a job opportunity or idea you'd like to discuss? Feel free to reach me at itsrahulyadav167@gmail.com .</p>
                    
                 </div>
             </div>
