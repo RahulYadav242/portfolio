@@ -6,151 +6,88 @@ const ProfileSection = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setShow(true), 500); // delay to show animation
+    const timeout = setTimeout(() => setShow(true), 500);
     return () => clearTimeout(timeout);
   }, []);
 
   return (
-    <div className="max-h-screen flex items-center justify-center bg-white-50 px-4 pt-20">
+    <div className="max-h-screen flex items-center justify-center bg-white px-4 pt-20">
       <div className="flex flex-col md:flex-row items-start md:items-center gap-10 max-w-6xl">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             <RoughNotationGroup show={show}>
-              
-             Hello!
-              
-              I'm Rahul, a{'  '}
-              <RoughNotation type="highlight" order={2} color="#f79205">
-                <span className="text-white-900 font-bold">developer</span>
+              Hello! I'm Rahul, a{' '}
+              <RoughNotation type="highlight" order={2}>
+                <span className="font-bold">developer</span>
               </RoughNotation>
             </RoughNotationGroup>
           </h1>
 
           <p className="mt-6 text-lg text-gray-700">
-             I love building tools that are {' '} 
-             <RoughNotationGroup show={show}>
-              
-            
-              <RoughNotation type="highlight"  order={2} color="#e9d5ff">
-                user-friendly, simple{'  '}
+            I love building tools that are{' '}
+            <RoughNotationGroup show={show}>
+              <RoughNotation type="highlight" order={2}>
+                user-friendly, simple
+              </RoughNotation>
+            </RoughNotationGroup>{' '}
+            and{' '}
+            <RoughNotationGroup show={show}>
+              <RoughNotation type="highlight" order={2}>
+                delightful
               </RoughNotation>
             </RoughNotationGroup>
-                   
-             
-             
-             
-                  and{'  '}
-                  <RoughNotationGroup show={show}>
-              
-            
-              <RoughNotation type="highlight"  order={2} color="#fcd703">
-               {'  '}delightful
-              </RoughNotation>
-            </RoughNotationGroup>    
-                  
-                  
-                  
-                        
           </p>
 
-
-          
-  
-
-
           <p className="mt-4 text-gray-700">
-            I recently completed   a full-stack internship at Empower Bharat
-            where I developed a production-ready web application using the MERN stack,working across both{" "}
+            I recently completed a full-stack internship at Empower Bharat
+            where I developed a production-ready web application using the MERN
+            stack, working across both{" "}
             <RoughNotationGroup show={show}>
-              
-            
-              <RoughNotation type="highlight" order={2}  color="#05f5b5">
-               {'  '}frontend{' '}
+              <RoughNotation type="highlight" order={2}>
+                frontend
               </RoughNotation>
-            </RoughNotationGroup> 
-
-
-
-
-
-             and
-             
-                         <RoughNotationGroup show={show}>
-              
-            
-              <RoughNotation type="highlight"  order={2} color="#05f5b5">
-               {'  '}back-end  web development
+            </RoughNotationGroup>{" "}
+            and{" "}
+            <RoughNotationGroup show={show}>
+              <RoughNotation type="highlight" order={2}>
+                back-end web development
               </RoughNotation>
-            </RoughNotationGroup> 
-             
-             
-               and integrating{" "}
-            
-               third-party APIs.
-            
+            </RoughNotationGroup>{" "}
+            and integrating third-party APIs.
           </p>
 
           <p className="mt-4 text-gray-700">
-             Through these experiences, I’ve contributed to real-world projects both independently and in{" "}
-            teams, building responsive interfaces, scalable APIs, and managing data with MongoDB.{" "}
-            I've developed a working style that values 
-
- <RoughNotationGroup show={show}>
-              
-            
-              <RoughNotation type="highlight" order={2} color="#fcd703">
-               {'  '}clarity
+            Through these experiences, I’ve contributed to real-world projects
+            both independently and in teams, building responsive interfaces,
+            scalable APIs, and managing data with MongoDB. I've developed a
+            working style that values{" "}
+            <RoughNotationGroup show={show}>
+              <RoughNotation type="highlight" order={2}>
+                clarity
               </RoughNotation>
-            </RoughNotationGroup> 
-            
-            
-            
-            
-            
-            ,
-             <RoughNotationGroup show={show}>
-              
-            
-              <RoughNotation type="highlight" order={2} color="#f454ff">
-               {'  '}flexibility
+            </RoughNotationGroup>
+            ,{" "}
+            <RoughNotationGroup show={show}>
+              <RoughNotation type="highlight" order={2}>
+                flexibility
               </RoughNotation>
-            </RoughNotationGroup> 
-            
-            
-            
-             , and{' '}
-             <RoughNotationGroup show={show}>
-              
-            
-              <RoughNotation type="highlight" order={2} color="#e9d5ff">
-               collaboration
+            </RoughNotationGroup>
+            , and{" "}
+            <RoughNotationGroup show={show}>
+              <RoughNotation type="highlight" order={2}>
+                collaboration
               </RoughNotation>
-            </RoughNotationGroup> 
-             
-             
-             
-               across the development process.
-           
+            </RoughNotationGroup>{" "}
+            across the development process.
           </p>
-
-
-
 
           <p className="mt-4 text-gray-800">
-            I'm currently looking for a new role as a developer.{"   "}
-
-
+            I'm currently looking for a new role as a developer.{" "}
             <RoughNotationGroup show={show}>
-              
-            
-              <RoughNotation type="circle" order={2} color="#f79205">
-               {'  '}<span className="font-semibold">Hire me?</span>
+              <RoughNotation type="circle" order={2}>
+                <span className="font-semibold">Hire me?</span>
               </RoughNotation>
-            </RoughNotationGroup> 
-
-
-
-            
+            </RoughNotationGroup>
           </p>
 
           <div className="mt-6 flex gap-4">
@@ -177,11 +114,8 @@ const ProfileSection = () => {
           />
         </div>
       </div>
-
-      
     </div>
   );
 };
 
 export default ProfileSection;
-
