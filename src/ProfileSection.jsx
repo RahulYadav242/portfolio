@@ -15,12 +15,12 @@ const ProfileSection = () => {
       <div className="flex flex-col md:flex-row items-start md:items-center gap-10 max-w-6xl">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            <RoughNotationGroup show={show}>
+            
               Hello! I'm Rahul, a{' '}
-              <RoughNotation type="highlight" order={2}>
+              
                 <span className="font-bold">developer</span>
-              </RoughNotation>
-            </RoughNotationGroup>
+              
+            
           </h1>
 
           <p className="mt-6 text-lg text-gray-700">
