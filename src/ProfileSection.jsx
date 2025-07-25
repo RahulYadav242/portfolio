@@ -1,93 +1,29 @@
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
-import React, { useState, useEffect } from "react";
-import IMG from './components/IMG.jpg'
+import React from "react";
+import IMG from './components/IMG.jpg';
 
 const ProfileSection = () => {
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => setShow(true), 500);
-    return () => clearTimeout(timeout);
-  }, []);
-
   return (
     <div className="max-h-screen flex items-center justify-center bg-white px-4 pt-20">
       <div className="flex flex-col md:flex-row items-start md:items-center gap-10 max-w-6xl">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            
-              Hello! I'm Rahul, a{' '}
-              
-                <span className="font-bold">developer</span>
-              
-            
+            Hello! I'm Rahul, a <span className="font-bold">developer</span>
           </h1>
 
           <p className="mt-6 text-lg text-gray-700">
-            I love building tools that are{' '}
-            <RoughNotationGroup show={show}>
-              <RoughNotation type="highlight" order={2}>
-                user-friendly, simple
-              </RoughNotation>
-            </RoughNotationGroup>{' '}
-            and{' '}
-            <RoughNotationGroup show={show}>
-              <RoughNotation type="highlight" order={2}>
-                delightful
-              </RoughNotation>
-            </RoughNotationGroup>
+            I love building tools that are <span className="font-semibold">user-friendly, simple</span> and <span className="font-semibold">delightful</span>.
           </p>
 
           <p className="mt-4 text-gray-700">
-            I recently completed a full-stack internship at Empower Bharat
-            where I developed a production-ready web application using the MERN
-            stack, working across both{" "}
-            <RoughNotationGroup show={show}>
-              <RoughNotation type="highlight" order={2}>
-                frontend
-              </RoughNotation>
-            </RoughNotationGroup>{" "}
-            and{" "}
-            <RoughNotationGroup show={show}>
-              <RoughNotation type="highlight" order={2}>
-                back-end web development
-              </RoughNotation>
-            </RoughNotationGroup>{" "}
-            and integrating third-party APIs.
+            I recently completed a full-stack internship at Empower Bharat where I developed a production-ready web application using the MERN stack, working across both <span className="font-semibold">frontend</span> and <span className="font-semibold">back-end web development</span> and integrating third-party APIs.
           </p>
 
           <p className="mt-4 text-gray-700">
-            Through these experiences, I’ve contributed to real-world projects
-            both independently and in teams, building responsive interfaces,
-            scalable APIs, and managing data with MongoDB. I've developed a
-            working style that values{" "}
-            <RoughNotationGroup show={show}>
-              <RoughNotation type="highlight" order={2}>
-                clarity
-              </RoughNotation>
-            </RoughNotationGroup>
-            ,{" "}
-            <RoughNotationGroup show={show}>
-              <RoughNotation type="highlight" order={2}>
-                flexibility
-              </RoughNotation>
-            </RoughNotationGroup>
-            , and{" "}
-            <RoughNotationGroup show={show}>
-              <RoughNotation type="highlight" order={2}>
-                collaboration
-              </RoughNotation>
-            </RoughNotationGroup>{" "}
-            across the development process.
+            Through these experiences, I’ve contributed to real-world projects both independently and in teams, building responsive interfaces, scalable APIs, and managing data with MongoDB. I've developed a working style that values <span className="font-semibold">clarity</span>, <span className="font-semibold">flexibility</span>, and <span className="font-semibold">collaboration</span> across the development process.
           </p>
 
           <p className="mt-4 text-gray-800">
-            I'm currently looking for a new role as a developer.{" "}
-            <RoughNotationGroup show={show}>
-              <RoughNotation type="circle" order={2}>
-                <span className="font-semibold">Hire me?</span>
-              </RoughNotation>
-            </RoughNotationGroup>
+            I'm currently looking for a new role as a developer. <span className="font-semibold">Hire me?</span>
           </p>
 
           <div className="mt-6 flex gap-4">
