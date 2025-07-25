@@ -123,13 +123,10 @@ const ProfileSection = () => {
             I'm currently looking for a new role as a developer.{"   "}
 
 
-            <RoughNotationGroup show={show}>
               
             
-              <RoughNotation type="circle" order={2} color="#f79205">
                {'  '}<span className="font-semibold">Hire me?</span>
-              </RoughNotation>
-            </RoughNotationGroup> 
+            
 
 
 
