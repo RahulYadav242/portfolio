@@ -136,32 +136,28 @@ const ProfileSection = () => {
 
 
 
-
           <div className="mt-6 flex gap-4">
-  <a
+            <button className="bg-black text-white px-5 py-2 rounded hover:bg-gray-800 transition">
+              <a
     href="https://www.linkedin.com/in/rahul-yadav-b565b5298"
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-black text-white px-5 py-2 rounded hover:bg-gray-800 transition text-center"
+    
   >
     View LinkedIn
   </a>
-  <a
-    href="https://github.com/RahulYadav242"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="border border-gray-400 text-black px-5 py-2 rounded hover:bg-gray-100 transition text-center"
-  >
-    View GitHub
-  </a>
-</div>
-
-
-
-
-
-
-
+            
+            </button>
+            <a
+              href="https://github.com/RahulYadav242"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-gray-400 px-5 py-2 rounded hover:bg-gray-100 transition inline-block"
+            >
+              View Github
+            </a>
+          </div>
+        </div>
 
 
 
@@ -170,7 +166,6 @@ const ProfileSection = () => {
           
 
       
-          </div>
         </div>
 
         {/* Image Section */}
