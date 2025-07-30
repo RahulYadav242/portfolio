@@ -133,9 +133,18 @@ const ProfileSection = () => {
             
           </p>
 
+          
+
           <div className="mt-6 flex gap-4">
             <button className="bg-black text-white px-5 py-2 rounded hover:bg-gray-800 transition">
-              View Linkedin
+             <a
+    href="https://www.linkedin.com/in/rahul-yadav-b565b5298"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-black text-white px-5 py-2 rounded hover:bg-gray-800 transition inline-block"
+  >
+    View LinkedIn
+  </a>
             </button>
             <a
               href="https://github.com/RahulYadav242"
