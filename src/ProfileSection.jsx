@@ -54,7 +54,7 @@ const ProfileSection = () => {
 
 
           <p className="mt-4 text-gray-700">
-            I recently completed   a full-stack internship at Empower Bharat
+            I recently completed   a full-stack internship at Empoweer Bharat
             where I developed a production-ready web application using the MERN stack,working across both{" "}
             
               
